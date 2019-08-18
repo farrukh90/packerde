@@ -4,7 +4,6 @@
       "region": "us-east-1",
       "instance_type": "m5.large",
       "ssh_username": "ec2-user",
-      "ssh_keypair_name": "macbook_farrukh",
       "source_ami": "ami-0b898040803850657",
       "ami_name": "updated-jenkins-ami {{timestamp}}"
     }],
@@ -17,7 +16,8 @@
                 "sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key",
                 "sudo yum install jenkins -y",
                 "sudo systemctl enable jenkins",
-                "sudo systemctl start jenkins"
+                "sudo systemctl start jenkins",
+                "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4eFHsLQJHgzqkzlZw9Sx8t0IRSygfmVn4kVzDKnx1G5fyGvTiMi6AhxRatasn5u9cSk30uXRXmLk6VCIWl1Jr5iN2XDgzX8RhXx5KzWmR6/5Hw0kRRZmXe1FH6GjaszrDVlL705pzTHp+gKb1xt9+G3iSPCnzg2qV4Oq/rHTGWvWKNbMbtZGpnXyIk4fXGsNGhjIZZvemyynAl9c7uCIA91/5mcCqyld1BIRP7rvSUt2q5gpO2IcW59/0thZExhOzS6GPl8EXjRDTaUPzhvHtNVJZoz2mpqeRZWWUnsiPUyug/K28ZCVKXj9B+t7z17SwPLXwTXFqlfFZvyCJVDmn root@ip-172-31-34-1.us-east-2.compute.internal' | tee ~/.ssh/authorized_keys"
             ]
         },
         {
