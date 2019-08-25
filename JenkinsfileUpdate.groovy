@@ -67,6 +67,7 @@ pipeline{
                     } else if (REGION == "us-east-2"){
                         AMI = "ami-0d8f6eb4f641ef691"
                         sh "echo ${AMI}"
+                    setEnvVariable("AMI", "AMI")
                     }
                 }
             }
